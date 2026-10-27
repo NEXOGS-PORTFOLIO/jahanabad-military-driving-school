@@ -1,0 +1,190 @@
+.auth-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.auth-container {
+  max-width: 500px;
+  width: 100%;
+  background: var(--light-bg);
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.auth-container h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.auth-form {
+  margin-bottom: 1.5rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.auth-link a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.otp-info {
+  background: rgba(44, 95, 45, 0.1);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.dark .auth-container {
+  background: #2a2a2a;
+}
+
+.dark .auth-container h1 {
+  color: var(--secondary-color);
+}
+
+.dark .auth-link a {
+  color: var(--secondary-color);
+}
+
+/* ===== Forgot Password — step indicator ===== */
+.fp-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.fp-step-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d1d5db;
+  transition: all 0.3s ease;
+}
+
+.fp-step-dot.active {
+  width: 28px;
+  border-radius: 4px;
+  background: var(--primary-color);
+}
+
+.fp-step-dot.done {
+  background: #97bc62;
+}
+
+/* ===== OTP digit boxes ===== */
+.otp-boxes {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.otp-box {
+  width: 48px;
+  height: 58px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  color: var(--primary-color);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  caret-color: var(--primary-color);
+}
+
+.otp-box:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(44, 95, 45, 0.14);
+}
+
+.otp-box.filled {
+  border-color: var(--primary-color);
+  background: rgba(44, 95, 45, 0.06);
+}
+
+/* ===== Email display badge ===== */
+.fp-email-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(44, 95, 45, 0.08);
+  border: 1px solid rgba(44, 95, 45, 0.2);
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.4rem;
+  font-size: 0.92rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+/* ===== Resend row ===== */
+.fp-resend-row {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.fp-resend-btn {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.fp-resend-btn:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+/* ===== Success screen ===== */
+.fp-success {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.fp-success-icon {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Spinner animation for loading button */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}

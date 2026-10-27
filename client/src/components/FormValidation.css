@@ -1,0 +1,44 @@
+.validated-form .form-control {
+  background: #fff;
+  color: #26342a;
+}
+
+.validated-form .form-control::placeholder {
+  color: #65736a;
+  opacity: 1;
+}
+
+.validated-form .form-control:focus {
+  box-shadow: 0 0 0 3px rgba(44, 95, 45, 0.15);
+}
+
+.validated-form .field-invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 1px #dc3545;
+}
+
+.validated-form .field-valid {
+  border-color: #28a745;
+}
+
+.field-error,
+.field-success {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+
+.field-error { color: #b42318; }
+.field-success { color: #246b35; }
+.field-error svg,
+.field-success svg { flex-shrink: 0; margin-top: 3px; }
+
+.field-hint {
+  display: block;
+  color: #666;
+  font-size: 0.85rem;
+  margin: 6px 0 12px;
+}

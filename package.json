@@ -1,0 +1,27 @@
+{
+  "name": "jmds-tms",
+  "version": "1.0.0",
+  "description": "Jahanabad Military Driving School - Training Management System",
+  "scripts": {
+    "package:deployment": "node scripts/package-deployment.js",
+    "verify:deployment": "node scripts/verify-deployment.js",
+    "smoke:deployment": "node scripts/smoke-deployment.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "seed": "cd server && npm run seed",
+    "seed:notices": "cd server && npm run seed:notices",
+    "seed:batches": "cd server && npm run seed:batches",
+    "migrate:enrollment-indexes": "cd server && npm run migrate:enrollment-indexes",
+    "seed:qa-flow": "cd server && npm run seed:qa-flow"
+  },
+  "keywords": [
+    "driving-school",
+    "tms",
+    "mern"
+  ],
+  "author": "Alfat Tasnim Hasan",
+  "license": "ISC"
+}

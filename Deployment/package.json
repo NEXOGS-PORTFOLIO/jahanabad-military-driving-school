@@ -1,0 +1,36 @@
+{
+  "name": "jmds-tms-server",
+  "version": "1.0.0",
+  "description": "Backend server for Jahanabad Military Driving School TMS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node app.js",
+    "check:config": "node -e \"require('dotenv').config(); require('./config/production').validateProductionEnv(); console.log('Production configuration valid')\"",
+    "create:admin": "node scripts/createAdmin.js",
+    "check:db": "node scripts/checkDatabase.js"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "tms"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.7",
+    "pdfkit": "^0.17.2",
+    "svg2img": "^1.0.0-beta.2"
+  },
+  "engines": {
+    "node": ">=22 <27"
+  }
+}

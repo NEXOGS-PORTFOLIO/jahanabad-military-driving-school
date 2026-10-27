@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 350" role="img" aria-labelledby="logo-title logo-description">
+  <title id="logo-title">Jahanabad Military Driving School</title>
+  <desc id="logo-description">An olive and ivory shield with a star, the school name, and a steering wheel.</desc>
+  <!-- Flat colors and deliberate spacing keep the badge clear at header sizes. -->
+  <path fill="#14241c" stroke="#fffdf3" stroke-width="6" stroke-linejoin="round"
+    d="M160 10C109 10 65 22 32 39v177c0 56 54 99 128 124 74-25 128-68 128-124V39C255 22 211 10 160 10Z"/>
+  <path fill="none" stroke="#c8c78b" stroke-width="3" stroke-linejoin="round"
+    d="M160 23c-46 0-84 10-115 25v168c0 47 48 86 115 111 67-25 115-64 115-111V48c-31-15-69-25-115-25Z"/>
+  <path fill="#c8c78b" d="m160 34 6 13 14 2-10 10 2 14-12-7-12 7 2-14-10-10 14-2Z"/>
+  <path stroke="#c8c78b" stroke-width="3" stroke-linecap="round" d="M72 57h53m70 0h53"/>
+  <text x="160" y="102" fill="#fffdf3" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="2">JAHANABAD</text>
+  <!-- The original banner remains the dominant recognition cue. -->
+  <path fill="#fffdf3" stroke="#14241c" stroke-width="5" stroke-linejoin="round" d="M8 115h304v65H8Z"/>
+  <text x="160" y="162" fill="#14241c" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" text-anchor="middle" letter-spacing="-1">MILITARY</text>
+  <text x="160" y="210" fill="#fffdf3" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" letter-spacing="1">DRIVING SCHOOL</text>
+  <g fill="none" stroke="#fffdf3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="160" cy="263" r="37"/>
+    <path d="M126 250q34-15 68 0M133 254l20 11m34-11-20 11m-7 6v28"/>
+  </g>
+  <circle cx="160" cy="263" r="9" fill="#c8c78b" stroke="#14241c" stroke-width="3"/>
+  <path fill="none" stroke="#c8c78b" stroke-width="3" stroke-linecap="round" d="m91 239 13 9m-4 15 10 4m119-28-13 9m4 15-10 4"/>
+</svg>
