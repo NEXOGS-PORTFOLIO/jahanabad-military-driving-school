@@ -5,15 +5,15 @@ const { createHash } = require('crypto');
 const QRCode = require('qrcode');
 
 // Increment when the layout changes so existing certificates are regenerated.
-const CERTIFICATE_DESIGN_VERSION = 'reference-2026-10-script-body-v21';
+const CERTIFICATE_DESIGN_VERSION = 'reference-2026-10-script-body-v22';
 const assets = path.join(__dirname, '../assets/certificate');
 const certificateFonts = () => {
   return {
     Heading: path.join(assets, 'fonts/OldEnglishTextMT.ttf'),
     Signature: path.join(assets, 'fonts/MonotypeCorsiva.ttf'),
     Detail: path.join(assets, 'fonts/Georgia-Regular.ttf'),
-    Emphasis: path.join(assets, 'fonts/Lobster-Regular.ttf'),
-    Body: path.join(assets, 'fonts/Lobster-Regular.ttf')
+    Emphasis: path.join(assets, 'fonts/ARISTON1.TTF'),
+    Body: path.join(assets, 'fonts/ARISTON1.TTF')
   };
 };
 const certificateFontFingerprint = () => {
